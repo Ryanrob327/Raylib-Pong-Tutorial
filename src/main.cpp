@@ -24,7 +24,6 @@ int main()
     SetTargetFPS(60);
     
 
-
     while (WindowShouldClose() == false)
     {
         // Updating
@@ -41,17 +40,15 @@ int main()
         }
 
 
-
         BeginDrawing();
-
-        // Drawing
-        ClearBackground(BLACK);
-        DrawLine(screenWidth / 2, 0, screenWidth / 2, screenHeight, WHITE);
-        ball.Draw();
-        opponent.Draw();
-        player.Draw();
-        DrawText(TextFormat("%i",opponent_score), screenWidth/4, 20, 80, WHITE);
-        DrawText(TextFormat("%i",player_score), 3*screenWidth/4, 20, 80, WHITE);
+            // Drawing
+            ClearBackground(BLACK);
+            DrawLine(screenWidth / 2, 0, screenWidth / 2, screenHeight, WHITE);
+            ball.Draw();
+            opponent.Draw();
+            player.Draw();
+            DrawText(TextFormat("%i",opponent_score), screenWidth/4, 20, 80, WHITE);
+            DrawText(TextFormat("%i",player_score), 3*screenWidth/4, 20, 80, WHITE);
         EndDrawing();
     }
     
