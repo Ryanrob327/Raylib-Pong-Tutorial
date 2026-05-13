@@ -1,12 +1,20 @@
 # How to run
 
-Build:
-```
-cmake ..
-cmake --build .
+Build from ../repo/build$:
+```Bash
+# only run whenchanging CMakeLists.txt, adding/removing src files, or changin dependencies:
+~/vscode/Raylib-Pong-Tutorials/build$ cmake ..
+
+# build every time after modifying code:
+~/vscode/Raylib-Pong-Tutorials/build$ cmake --build .
 ```
 
-Run:
+Run from ../repo/build$:
+```Bash
+~/vscode/Raylib-Pong-Tutorials/build$ ./game
 ```
-./game
+
+Run with just shell script from ../repo$:
+```Bash
+~/vscode/Raylib-Pong-Tutorials$ ./build.sh
 ```

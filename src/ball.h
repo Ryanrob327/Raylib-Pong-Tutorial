@@ -1,16 +1,16 @@
 #pragma once
 
+
+
 class Ball
 {
 public:
     Ball();
     void Update();
     void Draw() const;
+    void ResetBall();
 
-private:
-    int x;
-    int y;
-    int speedX;
-    int speedY;
+    float x, y;
+    float speedX, speedY;
     int radius;
 };
