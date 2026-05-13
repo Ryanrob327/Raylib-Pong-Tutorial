@@ -1,4 +1,5 @@
 # How to run
+## Manually
 
 Build from ../repo/build$:
 ```Bash
@@ -14,7 +15,14 @@ Run from ../repo/build$:
 ~/vscode/Raylib-Pong-Tutorials/build$ ./game
 ```
 
-Run with just shell script from ../repo$:
+## With shell script
+
+Run from ../repo$:
 ```Bash
 ~/vscode/Raylib-Pong-Tutorials$ ./build.sh
+```
+
+You may need permission with:
+```Bash
+chmod +x build.sh
 ```
